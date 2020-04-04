@@ -4,7 +4,7 @@ Stochastic gradient descent (often abbreviated SGD) is an iterative method for o
 
 ## Prerequisites
 
-This project is built and tested with Ubuntu 18.04 LTS. The taget system needs libglfw to be instaled.
+This project is built and tested with Ubuntu 18.04 LTS. The target system needs libglfw to be installed.
 
 ```bash
 sudo apt-get install libglfw
