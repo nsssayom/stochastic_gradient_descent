@@ -1,0 +1,3 @@
+[flake8.extension]
+per-file-ignores = flake8_per_file_ignores:PerFileIgnores
+
