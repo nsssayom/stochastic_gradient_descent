@@ -1,5 +1,5 @@
 {
-    "python.pythonPath": "/home/nsssayom/Desktop/sgd/env/bin/python3.6",
+    "python.pythonPath": "/usr/bin/python3.6",
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,

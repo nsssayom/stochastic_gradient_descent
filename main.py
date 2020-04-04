@@ -9,7 +9,7 @@ from point import Point
 
 # Global variables
 width = 600
-height = 700
+height = 720
 points = []     # Data points
 
 learning_rate = 0.3     # Learning rate
@@ -17,10 +17,10 @@ m = 1                   # Gradient
 b = 0
 
 # Fonts
-sourceLight = create_font("SourceCodePro-Light.otf", 18)    # noqa ignore=F405
-sourceBlack = create_font("SourceCodePro-Black.otf", 18)    # noqa ignore=F405
-sourceBold = create_font("SourceCodePro-Bold.otf", 18)      # noqa ignore=F405
-sourceMedium = create_font("SourceCodePro-Medium.otf", 18)  # noqa ignore=F405
+sourceLight = create_font("fonts/SourceCodePro-Light.otf", 18)    # noqa ignore=F405
+sourceBlack = create_font("fonts/SourceCodePro-Black.otf", 18)    # noqa ignore=F405
+sourceBold = create_font("fonts/SourceCodePro-Bold.otf", 18)      # noqa ignore=F405
+sourceMedium = create_font("fonts/SourceCodePro-Medium.otf", 18)  # noqa ignore=F405
 
 # Run once
 
@@ -157,6 +157,7 @@ def draw_line():
     text_font(sourceMedium)      # noqa ignore=F405
     fill(255, 51, 51)   # noqa ignore=F405
     text("Learning rate: " + str(learning_rate) + " [Press ↑/↓ to change]", (20, 660))     # noqa ignore=F405
+    text("Press R to Reset and ESC to Exit", (20, 680))     # noqa ignore=F405
 
     text_font(sourceBold)      # noqa ignore=F405
     fill(255, 0, 0)   # noqa ignore=F405
@@ -166,6 +167,7 @@ def draw_line():
 # Keyboard input handeler
 def key_pressed():
     global learning_rate
+    global points
 
     if str(key) == 'UP':        # noqa ignore=F405
         if (learning_rate <= 0.99):
@@ -173,6 +175,10 @@ def key_pressed():
     if str(key) == 'DOWN':        # noqa ignore=F405
         if (learning_rate >= 0.01):
             learning_rate = float(Decimal(learning_rate) - Decimal(0.01))    # noqa ignore=F405
+    if str(key).upper() == 'R':        # noqa ignore=F405
+        points.clear()
+        background(200)                 # noqa ignore=F405
+        drawAxis()
 
 
 if __name__ == '__main__':
