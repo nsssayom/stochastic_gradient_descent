@@ -40,7 +40,7 @@ python3 main.py
 
 ## Usage
 
-Click on the window to create data points. Gradient line will appear when there is more than one point on screen. Use UP and DOWN arrow key to adjust learning rate. Press ***R** to reset data points and **ESC** to exit.
+Click on the window to create data points. Gradient line will appear when there is more than one point on screen. Use UP and DOWN arrow key to adjust learning rate. Press **R** to reset data points and **ESC** to exit.
 
 ![Demonstration](https://i.imgur.com/jhWMQGI.png)
 
@@ -60,7 +60,7 @@ This work is based on [Dr. Debajyoti Karmaker's](https://scholar.google.com.au/c
 
 ## License
 
-This project is licensed under the GNU Lublic License.
+This project is licensed under the GNU Public License.
 
 ## Reference
 
